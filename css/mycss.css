@@ -1,14 +1,21 @@
 body{
     background-color: bisque;
 }
+.center{
+    text-align: center;
+}
 button
 {
-    background-color: cornflowerblue;
+    background-color:darksalmon;
     margin-top: 0%;
     margin-left: 0%;
     margin-right: 0%;
     margin-bottom: 0%;
     outline-color: aliceblue;
+    border-color: rgb(180, 187, 187);
+    border-radius: 8px;
+    outline-style: none;
+    
     
 }
 li
