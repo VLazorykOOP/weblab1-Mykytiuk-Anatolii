@@ -9,4 +9,9 @@ button
     margin-right: 0%;
     margin-bottom: 0%;
     outline-color: aliceblue;
+    
+}
+li
+{
+list-style-type: none;
 }
