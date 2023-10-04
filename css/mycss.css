@@ -1,8 +1,14 @@
+
 p {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: 510;
 }
 
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
 h1 {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-align: center;
@@ -44,4 +50,13 @@ button {
 li {
     list-style-type: none;
     color: rgb(75, 58, 35);
+}
+img{
+    border-radius: 8px;
+}
+.tut{
+    text-align: center;
+}
+.x2{
+    font-weight: 600;
 }
