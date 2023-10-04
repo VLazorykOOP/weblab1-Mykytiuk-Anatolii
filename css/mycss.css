@@ -1,4 +1,3 @@
-
 p {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: 510;
@@ -8,11 +7,13 @@ img {
     display: block;
     margin-left: auto;
     margin-right: auto;
-  }
+}
+
 h1 {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-align: center;
     font-weight: 520;
+    font-size: 30;
 }
 
 body {
@@ -29,8 +30,8 @@ body {
 
 button {
     background-color: rgb(216, 144, 73);
-    margin-top: 0%;
-    margin-left: 2%;
+    margin-top: 1%;
+    margin-left: 6%;
     margin-right: 0%;
     margin-bottom: 0%;
     outline-color: aliceblue;
@@ -52,25 +53,86 @@ li {
     list-style-type: none;
     color: rgb(75, 58, 35);
 }
-img{
+
+img {
     border-radius: 8px;
 }
-.x2{
+
+.x2 {
     font-weight: 600;
+    font-size: 26px;
+    text-align: center;
 }
+
 .x5 {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+    position: relative;
+    float: right;
+    top: 0;
+    margin-top: 10px;
+    margin-right: 15%;
+
 }
-.x6{
-    margin-left:0%;
+
+.x6 {
+    margin-left: 0%;
 }
-.x7{
-    background-color:peachpuff ;
+
+.x7 {
+    background-color: peachpuff;
     border-radius: 20px;
     outline-color: rgb(248, 202, 161);
+    text-align: left;
+    margin-top: 7%;
+    margin-left: 6%;
+    margin-right: 12%;
+    padding: 20px;
+
 }
-h4{
+
+h4 {
     color: peru;
+}
+
+.obg1 {
+    background-color: peachpuff;
+    border-radius: 20px;
+    outline-color: rgb(248, 202, 161);
+    text-align: left;
+    height: min-content;
+    width: 435px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 10px;
+    font-size: 30px;
+    margin-left: 6%;
+    padding: 20px;
+    margin-top: 6%;
+}
+
+.r2 {
+    background-color: peachpuff;
+    border-radius: 20px;
+    outline-color: rgb(248, 202, 161);
+    text-align: left;
+    height: min-content;
+    width: 435px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 10px;
+    font-size: 30px;
+    margin-left: 6%;
+    padding: 20px;
+}
+
+.img1 {
+    position: relative;
+    float: right;
+    top: 0;
+    margin-top: 0;
+    margin-right: 15%;
+
 }
