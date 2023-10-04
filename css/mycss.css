@@ -1,12 +1,13 @@
-body{
+body {
     background-color: bisque;
 }
-.center{
+
+.center {
     text-align: center;
 }
-button
-{
-    background-color:darksalmon;
+
+button {
+    background-color: darksalmon;
     margin-top: 0%;
     margin-left: 0%;
     margin-right: 0%;
@@ -20,9 +21,9 @@ button
     padding-bottom: 1px;
     padding-right: 1px;
 
-    
+
 }
-li
-{
-list-style-type: none;
+
+li {
+    list-style-type: none;
 }
