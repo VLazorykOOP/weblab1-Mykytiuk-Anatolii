@@ -54,9 +54,11 @@ li {
 img{
     border-radius: 8px;
 }
-.tut{
-    text-align: center;
-}
 .x2{
     font-weight: 600;
+}
+.x5 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
