@@ -1,12 +1,23 @@
-p {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-weight: 510;
+body {
+    background-color: bisque;
+    margin-right: 6%;
+}
+
+.center {
+    text-align: center;
 }
 
 img {
+    border-radius: 8px;
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+
+p {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 510;
 }
 
 h1 {
@@ -14,18 +25,6 @@ h1 {
     text-align: center;
     font-weight: 520;
     font-size: 30;
-}
-
-body {
-    background-color: bisque;
-}
-
-:visited {
-    color: aqua;
-}
-
-.center {
-    text-align: center;
 }
 
 button {
@@ -46,7 +45,6 @@ button {
     font-family: 'Times New Roman', Times, serif;
     font-weight: 400;
     color: azure;
-
 }
 
 li {
@@ -54,31 +52,15 @@ li {
     color: rgb(75, 58, 35);
 }
 
-img {
-    border-radius: 8px;
+h4 {
+    color: peru;
 }
 
-.x2 {
-    font-weight: 600;
-    font-size: 26px;
-    text-align: center;
+h5 {
+    color: rgb(218, 113, 9);
 }
 
-.x5 {
-    position: relative;
-    float: right;
-    top: 0;
-    margin-top: -10px;
-    margin-right: 15%;
-    font-family: 'Times New Roman', Times, serif;
-
-}
-
-.x6 {
-    margin-left: 0%;
-}
-
-.x7 {
+.obj1 {
     background-color: peachpuff;
     border-radius: 20px;
     outline-color: rgb(248, 202, 161);
@@ -90,11 +72,28 @@ img {
 
 }
 
-h4 {
-    color: peru;
+.x2 {
+    font-weight: 600;
+    font-size: 26px;
+    text-align: center;
 }
 
-.obg1 {
+.x5 {
+    position: relative;
+    float: left;
+    top: 0;
+    margin-top: auto;
+    margin-right: 8%;
+    margin-left: 6%;
+    display: flex;
+
+}
+
+.x6 {
+    margin-left: 0%;
+}
+
+.obg2 {
     background-color: peachpuff;
     border-radius: 20px;
     outline-color: rgb(248, 202, 161);
@@ -104,12 +103,10 @@ h4 {
     position: relative;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
-    margin: 10px;
     font-size: 30px;
     margin-left: 6%;
     padding: 20px;
-    margin-top: 6%;
+    margin-top: auto;
     font-family: 'Times New Roman', Times, serif;
 }
 
@@ -136,6 +133,71 @@ h4 {
     float: right;
     top: 0;
     margin-top: 0;
-    margin-right: 15%;
+    margin-right: auto;
+    margin-bottom: auto;
 
+}
+
+.x7 {
+    background-color: peachpuff;
+    border-radius: 20px;
+    outline-color: rgb(248, 202, 161);
+    text-align: left;
+    height: min-content;
+    width: auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin: auto;
+    font-size: 30px;
+    margin-left: 10px;
+    padding: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.x8 {
+    background-color: peachpuff;
+    border-radius: 20px;
+    outline-color: rgb(248, 202, 161);
+    text-align: left;
+    height: min-content;
+    width: 435px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 10px;
+    font-size: 30px;
+    margin-left: 6%;
+    padding: 20px;
+    margin-top: auto;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.obj3 {
+    margin-left: auto;
+}
+
+.obj5 {
+    position: relative;
+    float: right;
+    top: 0;
+    margin-top: 0;
+    margin-right: auto;
+    margin-bottom: auto;
+}
+
+.obj6 {
+    position: relative;
+    float: left;
+    top: 0;
+    margin-top: 0;
+    margin-left: auto;
+    margin-bottom: auto;
+}
+
+.ter1 {
+    margin-top: 10%;
+    position: relative;
 }
