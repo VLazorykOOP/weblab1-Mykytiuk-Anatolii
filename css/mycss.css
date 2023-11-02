@@ -40,15 +40,17 @@ h5 {
     color: rgb(218, 113, 9);
 }
 
-button{
+button {
     border-radius: 15px;
     border-color: peru;
     background-color: peachpuff;
     color: rgb(165, 95, 9);
 }
-.ref1 a{
-color: rgb(194, 113, 32);
+
+.ref1 a {
+    color: rgb(194, 113, 32);
 }
+
 .obj1 {
     background-color: peachpuff;
     border-radius: 20px;
@@ -79,9 +81,9 @@ color: rgb(194, 113, 32);
 }
 
 .x6 {
-    max-width: 100%; 
-    max-height: 100%; 
-    height: auto; 
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
     text-align: left;
     justify-content: flex-start;
 }
@@ -195,7 +197,7 @@ color: rgb(194, 113, 32);
     position: relative;
 }
 
-.x9{
+.x9 {
     margin-top: 10%;
     margin-left: 6%;
     background-color: peachpuff;
@@ -203,34 +205,34 @@ color: rgb(194, 113, 32);
     outline-color: rgb(248, 202, 161);
     padding: 20px;
 }
+
 .navigation {
     text-align: center;
     background-color: rgb(235, 158, 91);
     border-radius: 20px;
-  }
-  
-  .navigation ul {
+}
+
+.navigation ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
     display: flex;
-    justify-content:space-around;
-  }
-  
-  .navigation li {
+    justify-content: space-around;
+}
+
+.navigation li {
     margin: 0;
-  }
-  
-  .navigation a {
+}
+
+.navigation a {
     display: block;
     color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-  }
-  
-  .navigation a:hover {
-    background-color:rgb(230, 151, 61);
+}
+
+.navigation a:hover {
+    background-color: rgb(230, 151, 61);
     border-radius: 20px;
-  }
-  
+}
