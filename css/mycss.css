@@ -40,6 +40,15 @@ h5 {
     color: rgb(218, 113, 9);
 }
 
+button{
+    border-radius: 15px;
+    border-color: peru;
+    background-color: peachpuff;
+    color: rgb(165, 95, 9);
+}
+.ref1 a{
+color: rgb(194, 113, 32);
+}
 .obj1 {
     background-color: peachpuff;
     border-radius: 20px;

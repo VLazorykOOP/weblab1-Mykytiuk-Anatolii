@@ -1,0 +1,35 @@
+body{
+    background-color: bisque;
+    margin-right: 6%;
+}
+
+button{
+    border-radius: 15px;
+    border-color: peru;
+    background-color: peachpuff;
+    color: rgb(165, 95, 9);
+}
+.ref1 a{
+color: rgb(194, 113, 32);
+}
+.title1{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    font-weight: 520;
+    font-size: 30;
+    color: rgb(194, 108, 22);
+  }
+  .table-container {
+    padding: 5px; /* Відступ навколо таблиці */
+}
+
+.custom-table {
+ /* Ширина таблиці 100% від батьківського контейнера */
+}
+
+.custom-table th, td {
+    border: 1px solid black; /* Чорні межі для кожної комірки */
+    background-color: white; /* Біла заливка комірок */
+    padding: 10px; /* Відступ всередині комірок */
+    font-size: 10px;
+}
