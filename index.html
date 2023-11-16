@@ -5,19 +5,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="Author" content="Микитюк Анатолій Кирилович">
-
     <title>Anatolyy</title>
+    <script>
+        function onPageLoad() {
+            alert("Сторінка завантажена!");
+        }
+
+        function onButtonClick() {
+            alert("Клік на кнопці!");
+        }
+        function showImageInfo() {
+            alert("Головний корпус ЧНУ");
+        }
+    </script>
+        <style>
+            .tooltip {
+                position: fixed;
+                background: #fff;
+                padding: 5px;
+                border: 1px solid #ccc;
+                display: none;
+            }
+        </style>
     <link rel="stylesheet" href="css/mycss.css">
 </head>
 
-<body>
+<body onload="onPageLoad()">
     <div class="navigation">
         <ul>
-          <li><a href="company.html">Про компанію</a></li>
-          <li><a href="company_news.html">Новини компанії</a></li>
-          <li><a href="zvit.html">Звіт для лабораторної</a></li>
+            <li><a href="company.html">Про компанію</a></li>
+            <li><a href="company_news.html">Новини компанії</a></li>
+            <li><a href="zvit.html">Звіт для лабораторної</a></li>
         </ul>
-      </div>
+    </div>
     <h1 style="color:  rgb(138, 79, 20);" dir="ltr" class="center"> <i> Інформація про мене:</i></h1>
     <div class="obj1">
         <ul>
@@ -34,8 +54,19 @@
                 <li><b>Освітній заклад:</b>Чернівецький національний університет імені Юрія Федьковича</li>
             </p>
             <div>
-                <img class="x6" src="images/images copy/chnu_22.w575.png" alt="Фото ЧНУ">
+                <img class="x6" src="images/images copy/chnu_22.w575.png" alt="Фото ЧНУ"  id="image">
             </div>
+            <div id="tooltip" class="tooltip"></div>
+
+    <script>
+         document.getElementById("image").addEventListener("mousemove", function (event) {
+            var tooltip = document.getElementById("tooltip");
+            tooltip.style.left = event.pageX + 10 + "px";
+            tooltip.style.top = event.pageY + 10 + "px";
+            tooltip.innerHTML = "Головний корпус ЧНУ";
+            tooltip.style.display = "block";
+        });
+    </script>
             <li>
                 <b>Кафедра:</b>Математичних проблем управління і кібернетики
             </li>
@@ -56,7 +87,9 @@
 
         </ul>
     </div>
-
+    <div>
+        <button onclick="onButtonClick()">Натисніть мене</button>
+    </div>
 </body>
 
 </html>

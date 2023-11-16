@@ -6,6 +6,25 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Company</title>
    <link rel="stylesheet" href="css/mycss.css">
+   <style>
+      /* Стилі для зміни стильового оформлення */
+      .highlight {
+          color: red;
+          font-weight: bold;
+          text-decoration: underline;
+      }
+  </style>
+  <script>
+      // Функція для обробки наведення курсора
+      function onMouseOver(element) {
+          element.classList.add("highlight"); // Додає клас для зміни стильового оформлення
+      }
+
+      // Функція для обробки відведення курсора
+      function onMouseOut(element) {
+          element.classList.remove("highlight"); // Видаляє клас для зміни стильового оформлення
+      }
+  </script>
 </head>
 
 <body>
@@ -17,7 +36,7 @@
       </ul>
     </div>
    <div>
-   <h1 style="color: rgb(138, 79, 20);">
+   <h1 style="color: rgb(138, 79, 20);" onmouseover="onMouseOver(this)" onmouseout="onMouseOut(this)">
       Riot
    </h1>
 
@@ -47,7 +66,7 @@
       <p class="obj3">
          (Дата виготовлення зазначена на упаковці)
       </p>
-      <h4>
+      <h4 onmouseover="onMouseOver(this)" onmouseout="onMouseOut(this)">
          Вміст нікотину в одній цігарці:
       </h4>
       <p>
@@ -61,7 +80,7 @@
          <dt></dt>
         </dl>
 
-      <h4>
+      <h4 onmouseover="onMouseOver(this)" onmouseout="onMouseOut(this)">
          Товар нашої торгової марки ви можете знайти на полицях магазинів свого міста
       </h4>
 
@@ -74,10 +93,10 @@
       <p>
          Ціна за одну пачку 80 грн.
       </p>
-      <h5>
+      <h5 onmouseover="onMouseOver(this)" onmouseout="onMouseOut(this)">
          Споживання тютюнових виробів може бути шкідливим для вашого здоров'я
       </h5>
-      <h4>
+      <h4 onmouseover="onMouseOver(this)" onmouseout="onMouseOut(this)">
          Постачальник:
       </h4>
       <p>

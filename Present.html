@@ -5,6 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form</title>
+    <script>
+        function runTask() {
+            var links = ["Link 1", "Link 2", "Link 3", "Link 4", "Link 5"];
+
+            var textarea = document.getElementById("output");
+
+            if (textarea) {
+                textarea.value = links.join('\n');
+            } else {
+                console.log("Textarea not found");
+            }
+        }
+    </script>
     <link rel="stylesheet" href="css/Present.css">
 </head>
 
@@ -52,7 +65,88 @@
                 <textarea name="expectation" id="" cols="50" rows="2"></textarea>
                 <div>
                     <p>Наскільки наш сайт був корисним для Вас?</p>
-                    <input type="range" min="0" max="100" step="5" value="0" >
+                    <input type="range" min="0" max="100" step="5" value="0">
+                </div>
+                <div>
+                    <textarea id="output" rows="5" cols="30" placeholder="Output will appear here"></textarea>
+                    <br>
+                    <button type="button" onclick="runTask()">Run Task</button>
+                </div>
+                <div>
+                    <form id="searchForm">
+                        <label for="textInput">Введіть текст:</label>
+                        <input type="text" id="textInput" name="textInput">
+                        <button type="button" onclick="countDigits()">Пошук інформації</button>
+                    </form>
+                
+                    <div id="result"></div>
+                
+                    <script>
+                        function countDigits() {
+                            // Отримуємо текст з поля введення
+                            var inputText = document.getElementById('textInput').value;
+                
+                            // Здійснюємо підрахунок кількості цифр
+                            var digitCount = (inputText.match(/\d/g) || []).length;
+                
+                            // Виводимо результат
+                            var resultDiv = document.getElementById('result');
+                            resultDiv.innerHTML = "Кількість цифр у тексті: " + digitCount;
+                        }
+                    </script>
+                    
+                </div>
+
+                <div>
+                    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Task</title>
+</head>
+<body>
+    <form id="arrayForm">
+        <label for="arraySize">Введіть розмір масиву (N):</label>
+        <input type="number" id="arraySize" name="arraySize" placeholder="напр. 5" required>
+        <button type="button" onclick="promptForElements()">Далі</button>
+    </form>
+
+    <script>
+        function promptForElements() {
+            var arraySize = document.getElementById('arraySize').value;
+
+            if (arraySize > 0) {
+                var array = new Array(Number(arraySize));
+
+                for (var i = 0; i < array.length; i++) {
+                    var inputValue = prompt("Введіть значення для елемента з індексом " + i + ":");
+                    array[i] = Number(inputValue);
+                }
+
+                multiplyArray(array);
+            } else {
+                alert("Будь ласка, введіть додатне значення для розміру масиву (N).");
+            }
+        }
+
+        function multiplyArray(array) {
+            var middleIndex = Math.floor(array.length / 2);
+
+            for (var i = 0; i < middleIndex; i++) {
+                array[i] *= 2;
+            }
+
+            for (var j = middleIndex; j < array.length; j++) {
+                array[j] *= 3;
+            }
+
+            alert("Змінений масив:\n" + array.join(', '));
+        }
+    </script>
+</body>
+</html>
+
                 </div>
                 <div style="margin-top: 10px;">
                     <button type="submit"> <a href="company.html"></a> Надіслати</button>

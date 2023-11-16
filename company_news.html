@@ -6,28 +6,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>News</title>
     <link rel="stylesheet" href="css/mycss.css">
+    <style>
+        /* Стилі для зміни стильового оформлення */
+        .highlight {
+            color: blue;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+    </style>
+    <script>
+        // Функція для обробки кліку
+        function onClick(element) {
+            element.classList.add("highlight");
+        }
+
+        // Функція для обробки подвійного кліку
+        function onDoubleClick(element) {
+            element.classList.add("highlight");
+        }
+    </script>
 </head>
 
 <body>
     <div class="navigation">
         <ul>
-          <li><a href="index.html">Про мене</a></li>
-          <li><a href="company.html">Про компанію</a></li>
-          <li><a href="zvit.html">Звіт для лабораторної</a></li>
+            <li><a href="index.html">Про мене</a></li>
+            <li><a href="company.html">Про компанію</a></li>
+            <li><a href="zvit.html">Звіт для лабораторної</a></li>
         </ul>
-      </div>
-    <h1 class="center" style="color: rgb(158, 99, 39);">
-        <b>
+    </div>
+    <h1 class="center" style="color: rgb(158, 99, 39);" onclick="onClick(this)">
+        <b ondblclick="onDoubleClick(this)">
             Riot company
         </b>
     </h1>
-    <h2 class="center" style="color: peru;">
+    <h2 class="center" style="color: peru;" onclick="onClick(this)">
         Новини компанії
     </h2>
 
     <div>
         <img class="obj5" src="images/images copy/kadrovyjrobot.jpg" alt="">
-        <h3 class="center" style="color: peru;">
+        <h3 class="center" style="color: peru;" ondblclick="onDoubleClick(this)">
             Працівником цього цісяця став...:
         </h3>
     </div>
@@ -39,7 +58,7 @@
     </p>
 
     <div class="ter1">
-        <h3 class="center" style="color: peru;">
+        <h3 class="center" style="color: peru;" onclick="onClick(this)">
             Вкотре побито рекорд по заробітку за квартал...:
         </h3>
 
@@ -55,7 +74,7 @@
             нашим фермерам та різноробочим, без яких було б неможливо працювати далі.
         </p>
     </div>
-    <div class = ref1>
+    <div class=ref1>
         <button><a href="Employee.html"> Працівники </a></button>
     </div>
 
